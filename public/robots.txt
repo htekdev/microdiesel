@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://microdieselmerida.mx/sitemap-index.xml

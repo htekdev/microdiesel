@@ -1,0 +1,46 @@
+---
+import { site } from '~/data/site';
+const waUrl = `https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hola, me gustaría agendar una cita en Micro Diesel de Mérida.')}`;
+---
+<section class="relative bg-[var(--color-navy)] text-white overflow-hidden">
+  <!-- decorative diagonal bands -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-32 -right-32 w-[600px] h-[600px] rotate-12 bg-[var(--color-mj-green)]/20 blur-3xl rounded-full"></div>
+    <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] rotate-12 bg-[var(--color-mj-green-dark)]/25 blur-3xl rounded-full"></div>
+    <svg class="absolute right-0 top-0 h-full w-1/2 opacity-[0.07]" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <path d="M-50 80 L450 80 L420 130 L-80 130 Z" fill="white"/>
+      <path d="M-50 200 L450 200 L420 250 L-80 250 Z" fill="white"/>
+      <path d="M-50 320 L450 320 L420 370 L-80 370 Z" fill="white"/>
+    </svg>
+  </div>
+
+  <div class="container-x relative py-20 lg:py-28">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 rounded-full bg-[var(--color-mj-green)]/15 border border-[var(--color-mj-green)]/30 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--color-mj-green-light)]">
+        Mérida · Yucatán
+      </div>
+      <h1 class="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] text-white">
+        Especialistas en <span class="text-[var(--color-mj-green-light)]">motores diésel</span> en Mérida.
+      </h1>
+      <p class="mt-6 text-lg text-white/85 max-w-2xl">
+        Diagnóstico preciso, mano de obra honesta y refacciones de calidad. Cuidamos tu camión, camioneta o maquinaria diésel como si fuera nuestra.
+      </p>
+      <div class="mt-8 flex flex-wrap items-center gap-4">
+        <a href={waUrl} target="_blank" rel="noopener" class="btn-primary">
+          Agendar por WhatsApp
+          <svg class="w-4 h-4" viewBox="0 0 12 12"><path d="M2 6h7M6 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+        <a href={`tel:${site.phoneE164}`} class="btn-outline">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .7-.2 1l-2.3 2.3z"/></svg>
+          Llamar al taller
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap items-center gap-6 text-sm text-white/80">
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[var(--color-mj-green-light)]"></span> Diagnóstico computarizado</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[var(--color-mj-green-light)]"></span> Garantía en mano de obra</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[var(--color-mj-green-light)]"></span> Atención local</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+---
+import { site } from '~/data/site';
+---
+<section id="nosotros" class="py-20 bg-[var(--color-surface-alt)]">
+  <div class="container-x grid gap-12 lg:grid-cols-2 items-center">
+    <div>
+      <div class="eyebrow">Sobre nosotros</div>
+      <h2 class="mt-3 font-display text-3xl md:text-4xl font-bold text-[var(--color-navy)]">Un taller mecánico de confianza en el corazón de Mérida.</h2>
+      <p class="mt-5 text-[var(--color-text-muted)]">
+        En <strong class="text-[var(--color-navy)]">{site.brand}</strong> nos dedicamos a una sola cosa y la hacemos bien: diagnosticar y reparar motores diésel. Atendemos camiones, camionetas, vehículos comerciales y maquinaria, con la honestidad y atención personal que nuestros clientes merecen.
+      </p>
+      <ul class="mt-6 space-y-3 text-sm">
+        <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-[var(--color-mj-green)]"></span><span><strong>Diagnóstico real.</strong> Te explicamos qué tiene tu motor antes de cobrarte algo.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-[var(--color-mj-green)]"></span><span><strong>Refacciones de calidad.</strong> Trabajamos con marcas confiables y opciones para tu presupuesto.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-[var(--color-mj-green)]"></span><span><strong>Garantía en mano de obra.</strong> Si algo no quedó bien, lo revisamos sin costo.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-[var(--color-mj-green)]"></span><span><strong>Atención local.</strong> Tratas directamente con el dueño y el equipo del taller.</span></li>
+      </ul>
+    </div>
+
+    <div class="relative">
+      <div class="rounded-2xl bg-[var(--color-navy)] text-white p-8 md:p-10 shadow-xl">
+        <div class="text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-mj-green-light)]">Propietario</div>
+        <div class="mt-2 font-display text-2xl font-bold">{site.owner}</div>
+        <p class="mt-4 text-white/80 text-sm">
+          "Aquí no vendemos servicios que no necesitas. Le explicamos al cliente qué tiene su motor, qué se puede reparar y qué conviene cambiar. Así trabajamos desde el primer día."
+        </p>
+        <div class="mt-8 grid grid-cols-2 gap-6 border-t border-white/15 pt-6 text-sm">
+          <div>
+            <div class="text-white/60 text-xs uppercase tracking-wider">Teléfono taller</div>
+            <a href={`tel:${site.phoneE164}`} class="mt-1 block font-semibold hover:text-[var(--color-mj-green-light)]">{site.phone}</a>
+          </div>
+          <div>
+            <div class="text-white/60 text-xs uppercase tracking-wider">Celular</div>
+            <a href={`tel:${site.mobileE164}`} class="mt-1 block font-semibold hover:text-[var(--color-mj-green-light)]">{site.mobile}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

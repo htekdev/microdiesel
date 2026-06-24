@@ -1,0 +1,15 @@
+---
+export interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+<img
+  src="/logo-mj-merida.jpg"
+  alt="Logo MJ Mérida — Micro Diesel de Mérida"
+  class={`${className} object-contain`}
+  width="120"
+  height="120"
+  loading="eager"
+  decoding="async"
+/>

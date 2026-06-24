@@ -1,0 +1,56 @@
+---
+import { site } from '~/data/site';
+import Logo from './Logo.astro';
+---
+<footer class="bg-[var(--color-navy)] text-white mt-20">
+  <div class="container-x py-14 grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr_1.3fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <Logo class="h-14 w-14 bg-white rounded p-1" />
+        <div class="leading-tight">
+          <div class="font-display text-lg font-extrabold">MICRO DIESEL</div>
+          <div class="text-[11px] font-semibold tracking-[0.18em] opacity-80">DE MÉRIDA</div>
+          <div class="text-[10px] italic opacity-70 mt-1">"{site.tagline}"</div>
+        </div>
+      </div>
+      <p class="mt-5 text-sm text-white/75 max-w-sm">Taller especializado en motores diésel en Mérida, Yucatán. Servicio honesto, diagnóstico preciso y garantía en cada reparación.</p>
+    </div>
+
+    <div>
+      <h3 class="text-xs font-bold tracking-widest uppercase text-white/70 mb-4">Contacto</h3>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start gap-2"><span>📞</span><a href={`tel:${site.phoneE164}`} class="hover:underline text-white">{site.phone}</a></li>
+        <li class="flex items-start gap-2"><span>📱</span><a href={`tel:${site.mobileE164}`} class="hover:underline text-white">{site.mobile}</a></li>
+        <li class="flex items-start gap-2"><span>✉️</span><a href={`mailto:${site.email}`} class="hover:underline text-white break-all">{site.email}</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xs font-bold tracking-widest uppercase text-white/70 mb-4">Ubicación</h3>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start gap-2"><span>📍</span><span>{site.address.street}<br/>{site.address.colonia}<br/>CP {site.address.postalCode} · {site.address.city}, {site.address.region}</span></li>
+        <li class="flex items-start gap-2"><span>🕐</span><span>{site.hours}</span></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xs font-bold tracking-widest uppercase text-white/70 mb-4">Servicios</h3>
+      <ul class="space-y-2 text-sm text-white/85">
+        <li>Diagnóstico computarizado</li>
+        <li>Inyección diésel</li>
+        <li>Turbos y sobrealimentación</li>
+        <li>Reparación de motor</li>
+        <li>Mantenimiento preventivo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-white/15">
+    <div class="container-x py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs opacity-80">
+      <div>© {new Date().getFullYear()} {site.legalName}. Todos los derechos reservados.</div>
+      <div class="flex items-center gap-5">
+        <span>{site.owner}</span>
+      </div>
+    </div>
+  </div>
+</footer>

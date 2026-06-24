@@ -1,0 +1,14 @@
+---
+import { stats } from '~/data/site';
+---
+<section class="bg-[var(--color-surface-alt)] border-y border-[var(--color-border)]">
+  <div class="container-x py-10 grid grid-cols-2 lg:grid-cols-4 gap-6">
+    {stats.map((s) => (
+      <div class="text-center">
+        <div class="font-display text-3xl md:text-4xl font-extrabold text-[var(--color-mj-green-dark)]">{s.value}</div>
+        <div class="mt-1 text-sm font-semibold text-[var(--color-navy)]">{s.label}</div>
+        <div class="text-xs text-[var(--color-text-muted)]">{s.sub}</div>
+      </div>
+    ))}
+  </div>
+</section>
