@@ -34,5 +34,5 @@ Output estático en `dist/`.
 
 - **Razón social:** MICRO DIESEL DE MÉRIDA
 - **Propietario:** Héctor Armando Rocha Sepúlveda
-- **Dirección:** Circuito Colonias No. 752, Col. Castilla Cámara, CP 97278, Mérida, Yucatán
+- **Dirección:** Calle 110 #576C, Mulsay, CP 97249, Mérida, Yucatán
 - **Teléfono:** +52 999 359 7970
