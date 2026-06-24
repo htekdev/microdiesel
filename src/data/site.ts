@@ -9,7 +9,7 @@ export const site = {
   mobile: '999 359-7970',
   mobileE164: '+529993597970',
   whatsapp: '+529993597970',
-  email: 'mdselmerida@hotmail.com',
+  email: 'Mdieselmerida@hotmail.com',
   address: {
     street: 'Circuito Colonias No. 752',
     colonia: 'Col. Castilla Cámara',
