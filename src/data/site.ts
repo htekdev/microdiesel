@@ -9,7 +9,7 @@ export const site = {
   mobile: '999 359-7970',
   mobileE164: '+529993597970',
   whatsapp: '+529993597970',
-  email: 'contacto@microdieselmerida.mx',
+  email: 'contacto@microdisel.mx',
   address: {
     street: 'Circuito Colonias No. 752',
     colonia: 'Col. Castilla Cámara',
@@ -25,7 +25,7 @@ export const site = {
     latitude: 20.9674,
     longitude: -89.5926,
   },
-  url: 'https://microdieselmerida.mx',
+  url: 'https://microdisel.mx',
   social: {
     facebook: '',
   },
