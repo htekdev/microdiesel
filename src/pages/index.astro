@@ -3,6 +3,7 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import Hero from '~/components/Hero.astro';
 import StatBar from '~/components/StatBar.astro';
 import ServicesGrid from '~/components/ServicesGrid.astro';
+import FleetSection from '~/components/FleetSection.astro';
 import AboutSection from '~/components/AboutSection.astro';
 import ContactSection from '~/components/ContactSection.astro';
 import { site } from '~/data/site';
@@ -16,10 +17,11 @@ const orgSchema = {
   url: site.url,
   logo: `${site.url}/logo-mj-merida.jpg`,
   image: `${site.url}/logo-mj-merida.jpg`,
-  description: 'Taller mecánico especializado en motores diésel en Mérida, Yucatán. Diagnóstico computarizado, inyección, turbos y reparación de motor.',
+  description: 'Taller especializado en motores diésel y maquinaria pesada en Mérida, Yucatán. Atendemos flotillas de transporte, volquetes, grúas y equipo de construcción. Más de 35 años de experiencia.',
   telephone: site.phoneE164,
   email: site.email,
   founder: { '@type': 'Person', name: site.owner },
+  foundingDate: '2013',
   address: {
     '@type': 'PostalAddress',
     streetAddress: site.address.street,
@@ -42,10 +44,14 @@ const orgSchema = {
   slogan: site.tagline,
   knowsAbout: [
     'Motor diésel',
-    'Inyección common-rail',
-    'Turbocompresores',
-    'Diagnóstico computarizado',
     'Reparación de motor',
+    'Diagnóstico computarizado',
+    'Sistemas hidráulicos',
+    'Mantenimiento de flotillas',
+    'Maquinaria de construcción',
+    'Volquetes',
+    'Grúas',
+    'Camiones de carga',
   ],
 };
 
@@ -60,13 +66,14 @@ const websiteSchema = {
 };
 ---
 <BaseLayout
-  title={`${site.brand} | Taller especialista en diésel en Mérida, Yucatán`}
-  description="Micro Diesel de Mérida — taller mecánico especializado en motores diésel en Mérida, Yucatán. Diagnóstico computarizado, inyección, turbos, reparación de motor y mantenimiento preventivo."
+  title={`${site.brand} | Taller diésel y flotillas en Mérida, Yucatán`}
+  description="Micro Diesel de Mérida — taller especializado en motores diésel y maquinaria pesada. Atendemos flotillas de transporte, volquetes, grúas y equipo de construcción en Mérida, Yucatán. +35 años de experiencia."
   schema={[orgSchema, websiteSchema]}
 >
   <Hero />
   <StatBar />
   <ServicesGrid />
+  <FleetSection />
   <AboutSection />
   <ContactSection />
 </BaseLayout>

@@ -1,0 +1,43 @@
+---
+import { site, fleetPoints } from '~/data/site';
+const waUrl = `https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hola, quiero pedir información para mi flotilla.')}`;
+---
+<section id="flotillas" class="relative py-20 bg-[var(--color-navy)] text-white overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-20 -left-20 w-[400px] h-[400px] bg-[var(--color-mj-green)]/15 blur-3xl rounded-full"></div>
+    <div class="absolute -bottom-32 -right-20 w-[420px] h-[420px] bg-[var(--color-mj-green-dark)]/20 blur-3xl rounded-full"></div>
+  </div>
+
+  <div class="container-x relative grid gap-12 lg:grid-cols-[1fr_1.1fr] items-start">
+    <div>
+      <div class="inline-flex items-center gap-2 rounded-full bg-[var(--color-mj-green)]/15 border border-[var(--color-mj-green)]/30 px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-[var(--color-mj-green-light)]">
+        Para flotillas y empresas
+      </div>
+      <h2 class="mt-5 font-display text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[1.1] text-white">
+        Sabemos que <span class="text-[var(--color-mj-green-light)]">una unidad parada cuesta dinero.</span>
+      </h2>
+      <p class="mt-6 text-lg text-white/85 max-w-xl">
+        Trabajamos con empresas de transporte y constructoras que dependen de sus camiones, volquetes y grúas. Nuestro foco es que tu flotilla regrese al camino lo antes posible, sin reparaciones que no necesitas.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={waUrl} target="_blank" rel="noopener" class="btn-primary">
+          Cotizar flotilla
+          <svg class="w-4 h-4" viewBox="0 0 12 12"><path d="M2 6h7M6 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </a>
+        <a href={`tel:${site.phoneE164}`} class="btn-outline">Llamar al taller</a>
+      </div>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2">
+      {fleetPoints.map((p) => (
+        <div class="rounded-xl bg-white/5 border border-white/10 backdrop-blur p-5 hover:border-[var(--color-mj-green)]/50 transition">
+          <div class="w-9 h-9 rounded-md bg-[var(--color-mj-green)]/20 text-[var(--color-mj-green-light)] flex items-center justify-center">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>
+          </div>
+          <h3 class="mt-4 font-display text-base font-bold text-white">{p.title}</h3>
+          <p class="mt-2 text-sm text-white/75">{p.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
