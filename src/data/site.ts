@@ -9,11 +9,11 @@ export const site = {
   whatsapp: '+529993597970',
   email: 'Mdieselmerida@hotmail.com',
   address: {
-    street: 'Circuito Colonias No. 752',
-    colonia: 'Col. Castilla Cámara',
+    street: 'Calle 110 #576C',
+    colonia: 'Mulsay',
     city: 'Mérida',
     region: 'Yucatán',
-    postalCode: '97278',
+    postalCode: '97249',
     country: 'MX',
   },
   // Lun–Vie 9:00–18:00 · Sáb 9:00–14:00 (confirmado por Don Héctor 2026-06-24)
