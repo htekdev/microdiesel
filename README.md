@@ -2,7 +2,7 @@
 
 Sitio web oficial de **Micro Diesel de Mérida** — taller mecánico especializado en diésel en Mérida, Yucatán.
 
-- **Domain:** [microdieselmerida.mx](https://microdieselmerida.mx)
+- **Domain:** [microdisel.mx](https://microdisel.mx)
 - **Stack:** Astro 6 + Tailwind v4 + Vercel
 - **Idioma:** Español (es-MX)
 

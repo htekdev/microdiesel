@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://microdieselmerida.mx/sitemap-index.xml
+Sitemap: https://microdisel.mx/sitemap-index.xml

@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://microdieselmerida.mx',
+  site: 'https://microdisel.mx',
   output: 'static',
   adapter: vercel({
     webAnalytics: { enabled: false },
