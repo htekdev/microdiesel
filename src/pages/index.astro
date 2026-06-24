@@ -17,7 +17,7 @@ const orgSchema = {
   url: site.url,
   logo: `${site.url}/logo-mj-merida.jpg`,
   image: `${site.url}/logo-mj-merida.jpg`,
-  description: 'Taller especializado en motores diésel y maquinaria pesada en Mérida, Yucatán. Atendemos flotillas de transporte, volquetes, grúas y equipo de construcción. Más de 35 años de experiencia.',
+  description: 'Taller diésel en Mérida, Yucatán. Servicios preventivos y correctivos para todo tipo de unidades diésel — motor, suspensión y frenos. Atendemos a particulares y a flotillas de 3 a 30+ vehículos. Más de 35 años de experiencia.',
   telephone: site.phoneE164,
   email: site.email,
   founder: { '@type': 'Person', name: site.owner },
@@ -44,14 +44,13 @@ const orgSchema = {
   slogan: site.tagline,
   knowsAbout: [
     'Motor diésel',
+    'Mecánica general diésel',
+    'Servicios preventivos',
+    'Servicios correctivos',
     'Reparación de motor',
-    'Diagnóstico computarizado',
-    'Sistemas hidráulicos',
+    'Suspensión',
+    'Frenos',
     'Mantenimiento de flotillas',
-    'Maquinaria de construcción',
-    'Volquetes',
-    'Grúas',
-    'Camiones de carga',
   ],
 };
 
@@ -67,7 +66,7 @@ const websiteSchema = {
 ---
 <BaseLayout
   title={`${site.brand} | Taller diésel y flotillas en Mérida, Yucatán`}
-  description="Micro Diesel de Mérida — taller especializado en motores diésel y maquinaria pesada. Atendemos flotillas de transporte, volquetes, grúas y equipo de construcción en Mérida, Yucatán. +35 años de experiencia."
+  description="Micro Diesel de Mérida — taller diésel en Mérida, Yucatán. Servicios preventivos y correctivos para todo tipo de unidades diésel: motor, suspensión y frenos. Atendemos a particulares y a flotillas de 3 a 30+ vehículos. +35 años de experiencia."
   schema={[orgSchema, websiteSchema]}
 >
   <Hero />

@@ -16,9 +16,9 @@ export const site = {
     postalCode: '97278',
     country: 'MX',
   },
-  // Lun–Vie 9:00–18:00 (cierre puede extenderse a 18:30). Sábado por confirmar.
-  hours: 'Lun–Vie 9:00–18:00 · Sáb (consultar)',
-  hoursSchema: ['Mo-Fr 09:00-18:00'],
+  // Lun–Vie 9:00–18:00 · Sáb 9:00–14:00 (confirmado por Don Héctor 2026-06-24)
+  hours: 'Lun–Vie 9:00–18:00 · Sáb 9:00–14:00',
+  hoursSchema: ['Mo-Fr 09:00-18:00', 'Sa 09:00-14:00'],
   geo: {
     // Approximate Mérida centroid; refine after Sofia confirms exact coords.
     latitude: 20.9674,
@@ -41,65 +41,53 @@ export const nav = [
 
 export const services = [
   {
-    slug: 'diagnostico',
-    title: 'Diagnóstico y sensores',
-    blurb: 'Escaneo computarizado y revisión de sensores para localizar fallas con precisión antes de tocar el motor.',
-    icon: 'scan',
+    slug: 'preventivo',
+    title: 'Servicios preventivos',
+    blurb: 'Mantenimiento programado para evitar fallas — aceite, filtros, refrigerante, revisión general y diagnóstico para mantener tus unidades rodando.',
+    icon: 'shield',
   },
   {
     slug: 'motor',
     title: 'Reparación de motor',
-    blurb: 'Mantenimiento mayor y menor: empaques, distribución, rectificación y armado completo de motor diésel.',
+    blurb: 'Mecánica general de motor diésel — mantenimiento mayor y menor, empaques, distribución, rectificación y armado completo.',
     icon: 'engine',
   },
   {
-    slug: 'frenos',
-    title: 'Frenos y suspensión',
-    blurb: 'Servicio integral de frenos y suspensión para camiones, camionetas y vehículos de carga.',
-    icon: 'brake',
-  },
-  {
-    slug: 'mantenimiento',
-    title: 'Mantenimiento preventivo',
-    blurb: 'Servicios programados — aceite, filtros, refrigerante y revisión general — para evitar paros costosos.',
-    icon: 'shield',
-  },
-  {
-    slug: 'hidraulico',
-    title: 'Sistemas hidráulicos',
-    blurb: 'Reparación de bombas, mangueras y cilindros hidráulicos para maquinaria pesada y de construcción.',
-    icon: 'fuel',
-  },
-  {
-    slug: 'maquinaria',
-    title: 'Maquinaria y construcción',
-    blurb: 'Servicio especializado para volquetes, grúas y equipo pesado de obra.',
+    slug: 'suspension',
+    title: 'Suspensión',
+    blurb: 'Servicio y reparación de suspensión para camiones, camionetas y maquinaria — soporte para cargas pesadas y caminos exigentes.',
     icon: 'turbo',
+  },
+  {
+    slug: 'frenos',
+    title: 'Frenos',
+    blurb: 'Servicio integral de frenos para vehículos diésel y unidades de carga — revisión, ajuste y reparación completa.',
+    icon: 'brake',
   },
 ];
 
 export const stats = [
   { value: '+35', label: 'Años de oficio', sub: 'Don Héctor Rocha' },
   { value: '13', label: 'Años en Mérida', sub: 'al servicio de la región' },
-  { value: 'Flotillas', label: 'Especialidad', sub: 'transporte y obra' },
-  { value: 'Diésel', label: 'Foco total', sub: 'motores pesados y ligeros' },
+  { value: 'Diésel', label: 'Foco total', sub: 'mecánica general especializada' },
+  { value: '1–30+', label: 'Unidades', sub: 'desde un vehículo hasta flotillas' },
 ];
 
 export const fleetPoints = [
   {
+    title: 'Desde una sola unidad hasta 30+',
+    body: 'Atendemos a propietarios particulares de vehículos diésel y a empresas con flotillas de 3, 5, 10 y hasta 30 o más unidades.',
+  },
+  {
     title: 'Entendemos el costo del paro',
-    body: 'Un vehículo detenido no solo es una reparación pendiente: es ingreso que tu empresa deja de generar. Por eso priorizamos diagnósticos rápidos y reparaciones bien hechas a la primera.',
+    body: 'Una unidad detenida no solo es una reparación pendiente: es ingreso que tu empresa deja de generar. Por eso priorizamos diagnósticos rápidos y reparaciones bien hechas a la primera.',
   },
   {
-    title: 'Diagnóstico antes de cobrar',
-    body: 'Te decimos qué tiene la unidad antes de meterle mano. Sin sorpresas, sin servicios que no necesitas.',
+    title: 'Preventivo y correctivo',
+    body: 'Programamos mantenimientos preventivos para evitar paros y resolvemos correctivos — motor, suspensión y frenos — cuando se necesitan.',
   },
   {
-    title: 'Camiones, volquetes y grúas',
-    body: 'Atendemos flotillas de transporte y maquinaria de construcción — volquetes, grúas y equipo pesado de obra.',
-  },
-  {
-    title: 'Comunicación directa con tu operador',
+    title: 'Comunicación directa',
     body: 'Tratas con el dueño y el equipo del taller. Sin intermediarios ni cadenas largas de mensajes.',
   },
 ];
